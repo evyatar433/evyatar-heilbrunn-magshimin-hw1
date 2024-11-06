@@ -6,7 +6,7 @@
 typedef struct Queue
 {
 	// Complete the definition here
-
+	
 } Queue;
 
 void initQueue(Queue* q, unsigned int size);
