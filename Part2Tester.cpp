@@ -9,31 +9,31 @@
 using std::cout;
 using std::endl;
 
- #define GREEN 2
- #define DARK_RED 4
- #define PURPLE 5
- #define YELLOW 6
- #define LIGHT_BLUE 9
- #define LIGHT_GREEN 10
- #define TEAL 11
- #define RED 12
- #define PURPLE 13
- #define LIGHT_YELLOW 14
- #define WHITE 15
+#define GREEN 2
+#define DARK_RED 4
+#define PURPLE 5
+#define YELLOW 6
+#define LIGHT_BLUE 9
+#define LIGHT_GREEN 10
+#define TEAL 11
+#define RED 12
+#define PURPLE 13
+#define LIGHT_YELLOW 14
+#define WHITE 15
 
- void set_console_color(unsigned int color)
- {
- 	// colors are 0=black 1=blue 2=green and so on to 15=white
- 	// colorattribute = foreground + background * 16
- 	// to get red text on yellow use 4 + 14*16 = 228
- 	// light red on yellow would be 12 + 14*16 = 236
- 	// a Dev-C++ tested console application by vegaseat 07nov2004
+void set_console_color(unsigned int color)
+{
+	// colors are 0=black 1=blue 2=green and so on to 15=white
+	// colorattribute = foreground + background * 16
+	// to get red text on yellow use 4 + 14*16 = 228
+	// light red on yellow would be 12 + 14*16 = 236
+	// a Dev-C++ tested console application by vegaseat 07nov2004
 
- 	HANDLE hConsole;
+	HANDLE hConsole;
 
- 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
- 	SetConsoleTextAttribute(hConsole, color);
- }
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, color);
+}
 
 std::string popElementsAndGetPrintedStack(Stack* s)
 {
@@ -193,7 +193,7 @@ bool test3()
 	int numbers[10];
 	for (int i = 0; i < 10; i++)
 	{
-		numbers[i] = (i+1) * 2;
+		numbers[i] = (i + 1) * 2;
 	}
 
 	reverse(numbers, 10);
@@ -210,14 +210,14 @@ bool test3()
 	return true;
 }
 
- void printGreatJob()
- {
- 	cout <<	"  _____             __       __     __  \n" << 
- 	    	" / ___/______ ___ _/ /_  __ / /__  / /  \n" <<
- 	    	"/ (_ / __/ -_) _ `/ __/ / // / _ \\/ _ \\ \n" <<
-         	"\\___/_/  \\__/\\_,_/\\__/  \\___/\\___/_.__/ \n" <<
- 			"\n\t\t\tYou are amazing!!!\n" ;
- }
+void printGreatJob()
+{
+	cout << "  _____             __       __     __  \n" <<
+		" / ___/______ ___ _/ /_  __ / /__  / /  \n" <<
+		"/ (_ / __/ -_) _ `/ __/ / // / _ \\/ _ \\ \n" <<
+		"\\___/_/  \\__/\\_,_/\\__/  \\___/\\___/_.__/ \n" <<
+		"\n\t\t\tYou are amazing!!!\n";
+}
 
 int main()
 {
